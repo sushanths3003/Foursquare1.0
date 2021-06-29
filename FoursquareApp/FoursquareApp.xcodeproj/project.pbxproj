@@ -13,6 +13,7 @@
 		AF35DE0E268AECA900742C78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35DE0C268AECA900742C78 /* Main.storyboard */; };
 		AF35DE10268AECAA00742C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35DE0F268AECAA00742C78 /* Assets.xcassets */; };
 		AF35DE13268AECAA00742C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35DE11268AECAA00742C78 /* LaunchScreen.storyboard */; };
+		AF35DE1E268AEE5000742C78 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE1D268AEE5000742C78 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AF35DE0F268AECAA00742C78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF35DE12268AECAA00742C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35DE14268AECAA00742C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF35DE1D268AEE5000742C78 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		AF35DE05268AECA900742C78 /* FoursquareApp */ = {
 			isa = PBXGroup;
 			children = (
+				AF35DE1C268AEE2F00742C78 /* Home Page */,
 				AF35DE06268AECA900742C78 /* AppDelegate.swift */,
 				AF35DE08268AECA900742C78 /* SceneDelegate.swift */,
 				AF35DE0A268AECA900742C78 /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				AF35DE14268AECAA00742C78 /* Info.plist */,
 			);
 			path = FoursquareApp;
+			sourceTree = "<group>";
+		};
+		AF35DE1C268AEE2F00742C78 /* Home Page */ = {
+			isa = PBXGroup;
+			children = (
+				AF35DE1D268AEE5000742C78 /* HomePageViewController.swift */,
+			);
+			path = "Home Page";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF35DE1E268AEE5000742C78 /* HomePageViewController.swift in Sources */,
 				AF35DE0B268AECA900742C78 /* ViewController.swift in Sources */,
 				AF35DE07268AECA900742C78 /* AppDelegate.swift in Sources */,
 				AF35DE09268AECA900742C78 /* SceneDelegate.swift in Sources */,
