@@ -11,6 +11,9 @@
 		6A7A5073268AF44B0080640E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A5072268AF44B0080640E /* LoginViewController.swift */; };
 		6A7A5076268AF4940080640E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A5075268AF4940080640E /* CustomButton.swift */; };
 		6A7A507B268B1ABD0080640E /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A507A268B1ABD0080640E /* ForgotPasswordViewController.swift */; };
+		AF0667AB268B84CF00918017 /* CustomSddToFavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0667AA268B84CF00918017 /* CustomSddToFavouriteButton.swift */; };
+		AF0667AE268B89E100918017 /* CustomAddToFavouriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0667AD268B89E100918017 /* CustomAddToFavouriteButton.swift */; };
+		AF0667B1268B8BD600918017 /* PopularTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0667B0268B8BD600918017 /* PopularTableViewCell.swift */; };
 		AF35DE07268AECA900742C78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE06268AECA900742C78 /* AppDelegate.swift */; };
 		AF35DE09268AECA900742C78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE08268AECA900742C78 /* SceneDelegate.swift */; };
 		AF35DE0B268AECA900742C78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE0A268AECA900742C78 /* ViewController.swift */; };
@@ -18,6 +21,13 @@
 		AF35DE10268AECAA00742C78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF35DE0F268AECAA00742C78 /* Assets.xcassets */; };
 		AF35DE13268AECAA00742C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF35DE11268AECAA00742C78 /* LaunchScreen.storyboard */; };
 		AF35DE1E268AEE5000742C78 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE1D268AEE5000742C78 /* HomePageViewController.swift */; };
+		AF35DE47268B2BD200742C78 /* HomePageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE46268B2BD200742C78 /* HomePageCollectionViewCell.swift */; };
+		AF35DE4A268B2C3600742C78 /* NearYouTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE49268B2C3600742C78 /* NearYouTableViewCell.swift */; };
+		AF35DE4D268B2C6300742C78 /* NearYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE4C268B2C6300742C78 /* NearYouViewController.swift */; };
+		AF35DE50268B2CE600742C78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE4F268B2CE600742C78 /* Constants.swift */; };
+		AF35DE53268B2D1700742C78 /* PopularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE52268B2D1700742C78 /* PopularViewController.swift */; };
+		AF35DE56268B2D6500742C78 /* CustomButtonForCollectionViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE55268B2D6500742C78 /* CustomButtonForCollectionViewOptions.swift */; };
+		AF35DE5A268B2DBF00742C78 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF35DE59268B2DBF00742C78 /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +35,9 @@
 		6A7A5072268AF44B0080640E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6A7A5075268AF4940080640E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		6A7A507A268B1ABD0080640E /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		AF0667AA268B84CF00918017 /* CustomSddToFavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSddToFavouriteButton.swift; sourceTree = "<group>"; };
+		AF0667AD268B89E100918017 /* CustomAddToFavouriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAddToFavouriteButton.swift; sourceTree = "<group>"; };
+		AF0667B0268B8BD600918017 /* PopularTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularTableViewCell.swift; sourceTree = "<group>"; };
 		AF35DE03268AECA900742C78 /* FoursquareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoursquareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF35DE06268AECA900742C78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF35DE08268AECA900742C78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +47,13 @@
 		AF35DE12268AECAA00742C78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF35DE14268AECAA00742C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AF35DE1D268AEE5000742C78 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		AF35DE46268B2BD200742C78 /* HomePageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageCollectionViewCell.swift; sourceTree = "<group>"; };
+		AF35DE49268B2C3600742C78 /* NearYouTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearYouTableViewCell.swift; sourceTree = "<group>"; };
+		AF35DE4C268B2C6300742C78 /* NearYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearYouViewController.swift; sourceTree = "<group>"; };
+		AF35DE4F268B2CE600742C78 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AF35DE52268B2D1700742C78 /* PopularViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularViewController.swift; sourceTree = "<group>"; };
+		AF35DE55268B2D6500742C78 /* CustomButtonForCollectionViewOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonForCollectionViewOptions.swift; sourceTree = "<group>"; };
+		AF35DE59268B2DBF00742C78 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +72,9 @@
 			children = (
 				6A7A5075268AF4940080640E /* CustomButton.swift */,
 				6A7A506D268AF3BA0080640E /* CustomBackgroundForView.swift */,
+				AF35DE55268B2D6500742C78 /* CustomButtonForCollectionViewOptions.swift */,
+				AF0667AA268B84CF00918017 /* CustomSddToFavouriteButton.swift */,
+				AF0667AD268B89E100918017 /* CustomAddToFavouriteButton.swift */,
 			);
 			path = CustomClass;
 			sourceTree = "<group>";
@@ -75,6 +98,7 @@
 		AF35DE05268AECA900742C78 /* FoursquareApp */ = {
 			isa = PBXGroup;
 			children = (
+				AF35DE58268B2DA400742C78 /* Extension */,
 				AF35DE1C268AEE2F00742C78 /* Home Page */,
 				AF35DE06268AECA900742C78 /* AppDelegate.swift */,
 				AF35DE08268AECA900742C78 /* SceneDelegate.swift */,
@@ -86,6 +110,7 @@
 				AF35DE11268AECAA00742C78 /* LaunchScreen.storyboard */,
 				6A7A5072268AF44B0080640E /* LoginViewController.swift */,
 				AF35DE14268AECAA00742C78 /* Info.plist */,
+				AF35DE4F268B2CE600742C78 /* Constants.swift */,
 			);
 			path = FoursquareApp;
 			sourceTree = "<group>";
@@ -94,8 +119,21 @@
 			isa = PBXGroup;
 			children = (
 				AF35DE1D268AEE5000742C78 /* HomePageViewController.swift */,
+				AF35DE46268B2BD200742C78 /* HomePageCollectionViewCell.swift */,
+				AF35DE49268B2C3600742C78 /* NearYouTableViewCell.swift */,
+				AF35DE4C268B2C6300742C78 /* NearYouViewController.swift */,
+				AF35DE52268B2D1700742C78 /* PopularViewController.swift */,
+				AF0667B0268B8BD600918017 /* PopularTableViewCell.swift */,
 			);
 			path = "Home Page";
+			sourceTree = "<group>";
+		};
+		AF35DE58268B2DA400742C78 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AF35DE59268B2DBF00742C78 /* UIColor+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,14 +206,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF35DE53268B2D1700742C78 /* PopularViewController.swift in Sources */,
+				AF0667B1268B8BD600918017 /* PopularTableViewCell.swift in Sources */,
+				AF0667AE268B89E100918017 /* CustomAddToFavouriteButton.swift in Sources */,
 				AF35DE1E268AEE5000742C78 /* HomePageViewController.swift in Sources */,
+				AF35DE56268B2D6500742C78 /* CustomButtonForCollectionViewOptions.swift in Sources */,
+				AF35DE4A268B2C3600742C78 /* NearYouTableViewCell.swift in Sources */,
 				AF35DE0B268AECA900742C78 /* ViewController.swift in Sources */,
 				6A7A507B268B1ABD0080640E /* ForgotPasswordViewController.swift in Sources */,
+				AF35DE47268B2BD200742C78 /* HomePageCollectionViewCell.swift in Sources */,
 				6A7A506E268AF3BA0080640E /* CustomBackgroundForView.swift in Sources */,
+				AF35DE4D268B2C6300742C78 /* NearYouViewController.swift in Sources */,
+				AF35DE5A268B2DBF00742C78 /* UIColor+Extension.swift in Sources */,
+				AF0667AB268B84CF00918017 /* CustomSddToFavouriteButton.swift in Sources */,
 				6A7A5076268AF4940080640E /* CustomButton.swift in Sources */,
 				AF35DE07268AECA900742C78 /* AppDelegate.swift in Sources */,
 				6A7A5073268AF44B0080640E /* LoginViewController.swift in Sources */,
 				AF35DE09268AECA900742C78 /* SceneDelegate.swift in Sources */,
+				AF35DE50268B2CE600742C78 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
