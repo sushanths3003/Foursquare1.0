@@ -10,8 +10,12 @@
 import UIKit
 import MapKit
 
+
 class HomePageViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet var MainView: UIView!
+    @IBOutlet weak var trailingEdge: NSLayoutConstraint!
+    @IBOutlet weak var leadingEdge: NSLayoutConstraint!
     @IBOutlet weak var containerViewforPopular: UIView!
     @IBOutlet weak var collectionViewForHome: UICollectionView!
     @IBOutlet weak var nearYouContainerView: UIView!
@@ -46,6 +50,15 @@ class HomePageViewController: UIViewController, UICollectionViewDelegate, UIColl
         flowLayout.invalidateLayout()
         collectionViewForHome.reloadData()
     }
+    
+    @IBAction func sideMenuTapped(_ sender: UIButton) {
+        
+   
+        
+    }
+    
+    
+    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         

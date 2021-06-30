@@ -372,17 +372,10 @@
         <scene sceneID="41j-hr-IEB">
             <objects>
                 <viewController id="u7S-Ty-4a9" customClass="HomePageViewController" customModule="FoursquareApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Tjb-fI-v4f">
+                    <view key="view" contentMode="scaleToFill" id="Tjb-fI-v4f" userLabel="MainView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xln-fc-ECW">
-                                <rect key="frame" x="67" y="-1" width="240" height="669"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="bTE-hb-2X1" kind="embed" id="Pvh-fW-rrK"/>
-                                </connections>
-                            </containerView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGC-fq-Qfl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <subviews>
@@ -400,6 +393,10 @@
                                             <constraint firstAttribute="width" constant="30" id="bbz-N5-yhw"/>
                                         </constraints>
                                         <state key="normal" image="sidemenu"/>
+                                        <connections>
+                                            <action selector="sideMenuTapped:" destination="u7S-Ty-4a9" eventType="touchUpInside" id="by9-hg-dqn"/>
+                                            <segue destination="nvf-bf-cde" kind="presentation" modalPresentationStyle="overFullScreen" modalTransitionStyle="coverVertical" id="55S-LV-og0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zt-5U-74Y">
                                         <rect key="frame" x="287" y="15" width="30" height="21"/>
@@ -477,8 +474,8 @@
                                     <segue destination="M19-Up-LGx" kind="embed" identifier="NearYouViewController" id="tvr-1b-ySJ"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DxZ-Iw-OFd">
-                                <rect key="frame" x="16" y="116" width="375" height="556"/>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DxZ-Iw-OFd">
+                                <rect key="frame" x="0.0" y="111" width="375" height="556"/>
                                 <connections>
                                     <segue destination="8wg-RE-UCu" kind="embed" id="dkS-5c-cWu"/>
                                 </connections>
@@ -494,7 +491,7 @@
                             <constraint firstItem="kGC-fq-Qfl" firstAttribute="top" secondItem="p0T-eL-MU5" secondAttribute="top" id="PDg-eL-BKa"/>
                             <constraint firstItem="DxZ-Iw-OFd" firstAttribute="bottom" secondItem="p0T-eL-MU5" secondAttribute="bottom" id="RNh-YQ-5c7"/>
                             <constraint firstItem="DxZ-Iw-OFd" firstAttribute="trailing" secondItem="p0T-eL-MU5" secondAttribute="trailing" id="Sl6-Bz-UpR"/>
-                            <constraint firstItem="RZI-8a-Wp4" firstAttribute="trailing" secondItem="p0T-eL-MU5" secondAttribute="trailing" id="UZk-G3-BYw"/>
+                            <constraint firstItem="RZI-8a-Wp4" firstAttribute="trailing" secondItem="kGC-fq-Qfl" secondAttribute="trailing" id="UZk-G3-BYw"/>
                             <constraint firstItem="kGC-fq-Qfl" firstAttribute="leading" secondItem="p0T-eL-MU5" secondAttribute="leading" id="ktw-qj-az1"/>
                             <constraint firstItem="RZI-8a-Wp4" firstAttribute="leading" secondItem="p0T-eL-MU5" secondAttribute="leading" id="p0R-qN-tP8"/>
                             <constraint firstItem="T8H-df-R9f" firstAttribute="leading" secondItem="p0T-eL-MU5" secondAttribute="leading" id="pv8-eP-0r0"/>
@@ -504,14 +501,45 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="MainView" destination="Tjb-fI-v4f" id="9il-h1-MKn"/>
                         <outlet property="collectionViewForHome" destination="RZI-8a-Wp4" id="Ice-rY-3gK"/>
                         <outlet property="containerViewforPopular" destination="DxZ-Iw-OFd" id="gcf-QQ-YrH"/>
+                        <outlet property="leadingEdge" destination="ktw-qj-az1" id="Nxh-LV-e30"/>
                         <outlet property="nearYouContainerView" destination="T8H-df-R9f" id="lyL-ux-hg6"/>
+                        <outlet property="trailingEdge" destination="yaw-Dy-Spp" id="mIc-8r-75f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tgl-kb-MVN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2484" y="15.742128935532236"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sTi-eY-Op1">
+            <objects>
+                <viewController id="nvf-bf-cde" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pwD-I6-RSV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Lz-Qa-L2h">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="JLe-XF-iqg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bLZ-ym-YMB"/>
+                        <constraints>
+                            <constraint firstItem="5Lz-Qa-L2h" firstAttribute="top" secondItem="bLZ-ym-YMB" secondAttribute="top" id="TzI-Ma-7Wz"/>
+                            <constraint firstItem="5Lz-Qa-L2h" firstAttribute="leading" secondItem="bLZ-ym-YMB" secondAttribute="leading" id="g7a-GE-gkX"/>
+                            <constraint firstItem="5Lz-Qa-L2h" firstAttribute="bottom" secondItem="bLZ-ym-YMB" secondAttribute="bottom" id="jXg-wn-g7g"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wo-Lr-Hro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3202.4000000000001" y="27.436281859070466"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6I9-jQ-Hos">
@@ -531,10 +559,10 @@
             </objects>
             <point key="canvasLocation" x="-114.40000000000001" y="0.44977511244377816"/>
         </scene>
-        <!--View Controller-->
+        <!--Side Menu View Controller-->
         <scene sceneID="qvk-KL-YfY">
             <objects>
-                <viewController id="j7I-OI-rcC" sceneMemberID="viewController">
+                <viewController id="j7I-OI-rcC" customClass="SideMenuViewController" customModule="FoursquareApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vcb-6H-7Ol">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -824,14 +852,15 @@
             <objects>
                 <viewController id="bTE-hb-2X1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Rk-jP-1CO">
-                        <rect key="frame" x="0.0" y="0.0" width="240" height="669"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0ql-RY-nrq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LcX-ML-EtF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2392" y="-765"/>
+            <point key="canvasLocation" x="1852" y="-1629"/>
         </scene>
     </scenes>
     <resources>
