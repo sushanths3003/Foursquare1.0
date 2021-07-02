@@ -8,11 +8,11 @@
 import UIKit
 extension UITextField{
     
-    func setTextImage(name: String){
-        let imageView = UIImageView()
-        let image = UIImage(named: name)
-        imageView.image = image
-        self.leftView = imageView
-    
+    func addLeftImage(txtField: UITextField, andImage img: UIImage){
+        let leftImageView = UIImageView(frame: CGRect(x: 10, y: 0, width: img.size.width, height: img.size.height))
+        leftImageView.image = img
+        txtField.leftView = leftImageView
+        txtField.leftViewMode = .always
     }
+    
 }
