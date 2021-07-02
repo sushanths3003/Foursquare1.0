@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A6A3B3E268DBBD70069BDA4 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A3B3D268DBBD70069BDA4 /* DetailsViewController.swift */; };
+		6A6A3B41268DBFEA0069BDA4 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A3B40268DBFEA0069BDA4 /* ReviewViewController.swift */; };
+		6A6A3B48268DE42E0069BDA4 /* CustomSubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A3B47268DE42E0069BDA4 /* CustomSubmitButton.swift */; };
+		6A6A3B4B268DE51B0069BDA4 /* UIColour+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A3B4A268DE51B0069BDA4 /* UIColour+Extension.swift */; };
+		6A6F6983268F01900083ED80 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F6982268F01900083ED80 /* PhotosViewController.swift */; };
+		6A6F698A268F05440083ED80 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6F6989268F05440083ED80 /* CollectionViewCell.swift */; };
 		6A7627DF268B51A600431C33 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7627DE268B51A600431C33 /* SearchViewController.swift */; };
 		6A7627E2268B522500431C33 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7627E1268B522500431C33 /* UIImageView+Extension.swift */; };
+		6A771257268C967200019AC6 /* CustomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A771256268C967200019AC6 /* CustomUITextField.swift */; };
 		6A7A506E268AF3BA0080640E /* CustomBackgroundForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A506D268AF3BA0080640E /* CustomBackgroundForView.swift */; };
 		6A7A5073268AF44B0080640E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A5072268AF44B0080640E /* LoginViewController.swift */; };
 		6A7A5076268AF4940080640E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7A5075268AF4940080640E /* CustomButton.swift */; };
@@ -22,8 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A6A3B3D268DBBD70069BDA4 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6A6A3B40268DBFEA0069BDA4 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		6A6A3B47268DE42E0069BDA4 /* CustomSubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSubmitButton.swift; sourceTree = "<group>"; };
+		6A6A3B4A268DE51B0069BDA4 /* UIColour+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColour+Extension.swift"; sourceTree = "<group>"; };
+		6A6F6982268F01900083ED80 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		6A6F6989268F05440083ED80 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		6A7627DE268B51A600431C33 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		6A7627E1268B522500431C33 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		6A771256268C967200019AC6 /* CustomUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITextField.swift; sourceTree = "<group>"; };
 		6A7A506D268AF3BA0080640E /* CustomBackgroundForView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundForView.swift; sourceTree = "<group>"; };
 		6A7A5072268AF44B0080640E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6A7A5075268AF4940080640E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -53,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				6A7627E1268B522500431C33 /* UIImageView+Extension.swift */,
+				6A6A3B4A268DE51B0069BDA4 /* UIColour+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -62,6 +77,8 @@
 			children = (
 				6A7A5075268AF4940080640E /* CustomButton.swift */,
 				6A7A506D268AF3BA0080640E /* CustomBackgroundForView.swift */,
+				6A6A3B47268DE42E0069BDA4 /* CustomSubmitButton.swift */,
+				6A771256268C967200019AC6 /* CustomUITextField.swift */,
 			);
 			path = CustomClass;
 			sourceTree = "<group>";
@@ -89,6 +106,10 @@
 				AF35DE08268AECA900742C78 /* SceneDelegate.swift */,
 				AF35DE0A268AECA900742C78 /* ViewController.swift */,
 				AF35DE0C268AECA900742C78 /* Main.storyboard */,
+				6A6F6982268F01900083ED80 /* PhotosViewController.swift */,
+				6A6F6989268F05440083ED80 /* CollectionViewCell.swift */,
+				6A6A3B40268DBFEA0069BDA4 /* ReviewViewController.swift */,
+				6A6A3B3D268DBBD70069BDA4 /* DetailsViewController.swift */,
 				6A7627DE268B51A600431C33 /* SearchViewController.swift */,
 				6A7627E4268B522F00431C33 /* Extensions */,
 				6A7A507A268B1ABD0080640E /* ForgotPasswordViewController.swift */,
@@ -173,13 +194,20 @@
 			files = (
 				AF35DE0B268AECA900742C78 /* ViewController.swift in Sources */,
 				6A7A507B268B1ABD0080640E /* ForgotPasswordViewController.swift in Sources */,
+				6A6A3B41268DBFEA0069BDA4 /* ReviewViewController.swift in Sources */,
 				6A7627DF268B51A600431C33 /* SearchViewController.swift in Sources */,
+				6A6A3B3E268DBBD70069BDA4 /* DetailsViewController.swift in Sources */,
 				6A7627E2268B522500431C33 /* UIImageView+Extension.swift in Sources */,
 				6A7A506E268AF3BA0080640E /* CustomBackgroundForView.swift in Sources */,
 				6A7A5076268AF4940080640E /* CustomButton.swift in Sources */,
 				AF35DE07268AECA900742C78 /* AppDelegate.swift in Sources */,
+				6A6F6983268F01900083ED80 /* PhotosViewController.swift in Sources */,
+				6A6F698A268F05440083ED80 /* CollectionViewCell.swift in Sources */,
 				6A7A5073268AF44B0080640E /* LoginViewController.swift in Sources */,
+				6A771257268C967200019AC6 /* CustomUITextField.swift in Sources */,
 				AF35DE09268AECA900742C78 /* SceneDelegate.swift in Sources */,
+				6A6A3B48268DE42E0069BDA4 /* CustomSubmitButton.swift in Sources */,
+				6A6A3B4B268DE51B0069BDA4 /* UIColour+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

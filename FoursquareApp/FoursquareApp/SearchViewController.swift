@@ -9,6 +9,8 @@ import UIKit
 
 class SearchViewController: UIViewController {
     
+    @IBOutlet weak var nearPlace: UITextField!
+    @IBOutlet weak var searchPlace: UITextField!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
@@ -24,6 +26,12 @@ class SearchViewController: UIViewController {
         newLayer.startPoint = CGPoint(x: 0.5, y: 0)
         newLayer.endPoint = CGPoint(x: 0.5, y: 1)
         view.layer.insertSublayer(newLayer, at: 0)
+        
+        let searchImage = UIImage(named: "serch_hdpi")!
+        let nearmeImage = UIImage(named: "near_me_hdpi")!
+        searchPlace.addLeftImage(txtField: searchPlace, andImage: searchImage)
+        nearPlace.addLeftImage(txtField: nearPlace, andImage: nearmeImage)
+        
         // Do any additional setup after loading the view.
     }
     
